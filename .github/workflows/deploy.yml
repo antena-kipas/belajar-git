@@ -17,7 +17,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 64000
+        port: 22
         script: |
             if [ ! -d "/var/www/html/cicd" ]; then
               mkdir -p /var/www/html/cicd
